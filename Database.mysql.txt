@@ -1,0 +1,46 @@
+
+create database train_res;
+use train_res;
+
+
+create table train_detail
+(train_no  int(10) primary key,
+cost(in rupees) int(10),
+starting_point varchar(50),
+destination varchar(60),
+time_of_departure varchar(40),
+date_available varchar(88));
+
+
+
+create table user_information
+(unique_id int(30) primary key,
+uname varchar(40) not null,
+age int(90),
+gender varchar(50),
+train_no int(90),
+starting_point varchar(50),
+destination varchar(60),
+reservation varchar(30));
+
+
+
+insert into train_detail values(12398,2300,"New Delhi","chennai","15:40",2021);
+insert into train_detail values(12397,2300,"Chennai","New Delhi","15:40",2021);
+insert into train_detail values(12227,2100,"Mumbai","New Delhi","10:50",2021);
+insert into train_detail values(12226,2100,"New Delhi","Mumbai","20:00",2021);
+insert into train_detail values(12245,1100,"Jaipur","Amritsar","12:00",2021);
+insert into train_detail values(12246,1100,"Amritsar","Jaipur","7:00",2021);
+insert into train_detail values(22129,2800,"Jammu tavi","Kanyakumari","18:10",2021);
+insert into train_detail values(29852,900,"Old Delhi","Bhopal","14:30",2021);
+insert into train_detail values(27421,2500,"Varansi","Bangalore","14:30",2021);
+insert into train_detail values(22128,2800,"Kanyakumari","Jammu tavi","10:00",2021);
+insert into train_detail values(29853,900,"Bhopal","Old Delhi","23:30",2021);
+insert into train_detail values(27422,2500,"Banglore","Varansi","20:20",2021);
+
+
+
+
+
+
+
